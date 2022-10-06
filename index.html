@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -87,74 +88,38 @@
     <section id="our-friends" class="our-friends">
         <div class="container">
             <h2 class="our-friends__title title">Our friends who <br> are looking for a house</h2>
-            <div class="slider">
-                <div class="slider__container">
-                    <div class="slider__items">
-                        <div class="cards cards--left">
-                            <div class="card ">
-                                <img class="card__img" src="images/pets-katrine.png" alt="Katrine">
-                                <p class="card__name">l</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card ">
-                                <img class="card__img" src="images/pets-jennifer.png" alt="Jennifer">
-                                <p class="card__name">l</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card ">
-                                <img class="card__img" src="images/pets-woody.png" alt="Woody">
-                                <p class="card__name">l</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="cards cards--center">
-                            <div class="card">
-                                <img class="card__img" src="images/pets-katrine.png" alt="Katrine">
-                                <p class="card__name">Katrine</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card">
-                                <img class="card__img" src="images/pets-jennifer.png" alt="Jennifer">
-                                <p class="card__name">Jennifer</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card">
-                                <img class="card__img" src="images/pets-woody.png" alt="Woody">
-                                <p class="card__name">Woody</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="cards cards--right">
-                            <div class="card">
-                                <img class="card__img" src="images/pets-katrine.png" alt="Katrine">
-                                <p class="card__name">r</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card">
-                                <img class="card__img" src="images/pets-jennifer.png" alt="Jennifer">
-                                <p class="card__name">r</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                            <div class="card">
-                                <img class="card__img" src="images/pets-woody.png" alt="Woody">
-                                <p class="card__name">r</p>
-                                <a href="#" class="card__btn btn">Learn more</a>
-                            </div>
-                        </div>
+            <div class="slider swiper">
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide card">
+                        <img class="card__img" src="images/pets-katrine.png" alt="Katrine">
+                        <p class="card__name">Katrine</p>
+                        <a href="#" class="card__btn btn">Learn more</a>
                     </div>
+                    <div class="swiper-slide card">
+                        <img class="card__img" src="images/pets-jennifer.png" alt="Jennifer">
+                        <p class="card__name">Jennifer</p>
+                        <a href="#" class="card__btn btn">Learn more</a>
+                    </div>
+                    <div class="swiper-slide card">
+                        <img class="card__img" src="images/pets-woody.png" alt="Woody">
+                        <p class="card__name">Woody</p>
+                        <a href="#" class="card__btn btn">Learn more</a>
+                    </div>
+                    <div class="swiper-slide card">
+                        <img class="card__img" src="images/pets-katrine.png" alt="Katrine">
+                        <p class="card__name">Katrine</p>
+                        <a href="#" class="card__btn btn">Learn more</a>
+                    </div> 
+                    <div class="swiper-slide card">
+                        <img class="card__img" src="images/pets-woody.png" alt="Woody">
+                        <p class="card__name">Woody</p>
+                        <a href="#" class="card__btn btn">Learn more</a>
+                    </div> 
                 </div>
-                <div class="slider__arrows">
-                    <div class="arrow-prev arrows">
-                        <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-                        </svg>
-                    </div>
-                    <div class="arrow-next arrows">
-                        <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
-                        </svg>
-                    </div>
-                </div>
+            
+                <div class="arrows arrow-prev swiper-button-prev"></div>
+                <div class="arrows .arrow-next swiper-button-next"></div>
+            
             </div>
             <a href="pets.html" class="our-friends__btn btn">Get to know the rest</a>
         </div>
@@ -401,7 +366,8 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

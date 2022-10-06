@@ -575,18 +575,10 @@ body{
 }
 .slider{
     position: relative;
-    &__container{
-        max-width: 990px;
-        overflow: hidden;
-        margin: 0 auto 62px;
-        @media (max-width: 1240px) {
-            max-width: 580px;
-        } 
-        @media (max-width: 767px) {
-            max-width: 270px;
-            margin-bottom: 42px;
-        } 
-    }
+    max-width: 990px;
+    margin-bottom: 30px;
+    padding: 0 50px;
+ 
     &__items{
         position: relative;
         top: 0;
@@ -596,147 +588,43 @@ body{
 
     }
     .arrows{
-        position: absolute;        
-        z-index: 5;
-        top: 50%;
-        border: 2px solid $color-primary;
-        border-radius: 50%;
-        padding: 16px 17px;
-        line-height: 1;
-        transition: all .3s;
-        transform: translateY(-50%);
-        cursor: pointer;
-        &:hover{
-            background-color: $color-primary-light;
-            border-color: $color-primary-light;
-        }
-        @media (max-width: 767px) {
-           position: relative;   
-           display: inline-block;
-           transform: none;
-           //margin-top: 20px;
-           margin-bottom: 20px;
-           margin-right: 40px;
-           margin-left: 40px;
-        }
+        color: $color-primary-light;
     }
     .arrow-prev{
-        left: -10px;
+        left: 0px;
     }
     .arrow-next{
-        right: -10px;
+        right: 0px;
     }
 }
-.move-l{
-    animation-name: move-l;
-    animation-duration: 3s;
-}
-.move-r{
-    animation-name: move-r;
-    animation-duration: 3s;
-}
-@keyframes move-l{
-    from{
-        left: 0px;
+.card{
+    background-color: $color-light-s;
+    border-radius: 9px; 
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+ 
+    &:hover{
+        background-color: $color-light-xl;
     }
-    to{
-        left: 990px;
+    &:hover .btn{
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
     }
-}
-@media (max-width: 1240px) {
-    @keyframes move-l{
-        from{
-            left: 0px;
-        }
-        to{
-            left: 580px;
-        }
-    }} 
-@media (max-width: 767px) {
-    @keyframes move-l{
-        from{
-            left: 0px;
-        }
-        to{
-            left: 270px;
-        }
-    }} 
-
-@keyframes move-r{
-    from{
-        left: 0px;
+    &__img{
+        width: 100%;
+        margin-bottom: 23px;
     }
-    to{
-        left: -990px;
+    &__name{ 
+        margin-bottom: 28px;
+        font-size: 20px;
+        line-height: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
     }
-}
-@media (max-width: 1240px) {
-    @keyframes move-r{
-        from{
-            left: 0px;
-        }
-        to{
-            left: -580px;
-        }
-    }} 
-@media (max-width: 767px) {
-    @keyframes move-r{
-        from{
-            left: 0px;
-        }
-        to{
-            left: -270px;
-        }
-    }} 
-.cards{
-    display: flex;
-    justify-content: center;
-    max-width: 990px;
-    margin: 0 auto;
-    gap: 90px;
-    @media (max-width: 1240px) {
-        gap: 40px; 
-    }
-
-    .card{
-        background-color: $color-light-s;
-        border-radius: 9px;
-        width: 270px;  
-        text-align: center;
-        transition: all .3s;
-        cursor: pointer;
-        @media (max-width: 1240px) {
-            &:last-child{
-                display: none;
-            }      
-        }
-        @media (max-width: 767px) {
-            &:nth-child(2){
-                display: none;
-            }      
-        }
-        &:hover{
-            background-color: $color-light-xl;
-        }
-        &:hover .btn{
-            background-color: $color-primary-light;
-            border-color: $color-primary-light;
-        }
-        &__img{
-            width: 100%;
-            margin-bottom: 23px;
-        }
-        &__name{ 
-            margin-bottom: 28px;
-            font-size: 20px;
-            line-height: 23px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            letter-spacing: 1px;
-        }
-        &__btn{ 
-            border: 2px solid $color-primary; 
-            margin-bottom: 28px; 
-        }
+    &__btn{ 
+        border: 2px solid $color-primary; 
+        margin-bottom: 28px; 
     }
 }
 .addition{
